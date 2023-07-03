@@ -10,7 +10,7 @@ function About() {
           Soy un desarrollador web y de software especializado en PHP, HTML, CSS y JavaScript. También tengo experiencia en el desarrollo de aplicaciones usando Java. Mi enfoque es crear soluciones digitales eficientes y atractivas mediante la combinación de tecnologías modernas y las mejores prácticas de desarrollo.<br/><br/>Me apasiona convertir ideas en productos funcionales y adaptables, brindando experiencias de usuario excepcionales.
         </p>
         <ul className="flex flex-wrap gap-4" aria-label="Sobre mí">
-          <a href="https://davidml.dev/CV_ES.pdf" target="_blank" className="flex items-center rounded-full bg-blue-100/10 hover:bg-blue-100/20 transition-colors pl-2 pr-4 py-2 text-md font-medium leading-5 dark:text-white text-black">
+          <a href="/CV_ES.pdf" target="_blank" className="flex items-center rounded-full bg-blue-100/10 hover:bg-blue-100/20 transition-colors pl-2 pr-4 py-2 text-md font-medium leading-5 dark:text-white text-black">
             <Image alt="Currículum Vitae" className="fill-white ml-1 mr-2" src="/curriculum-vitae-svgrepo-com.svg" height={16} width={16}/>
             Currículum Vitae
           </a>
