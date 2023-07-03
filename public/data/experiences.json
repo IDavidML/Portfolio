@@ -1,0 +1,19 @@
+{
+  "experiences": [
+    {
+      "id": "denox",
+      "label": "Denox",
+      "url": "https://denox.es",
+      "work": "Desarrollador Fullstack",
+      "description": "Desarrollo de Front-end y Back-end de soluciones para el comercio electrónico",
+      "dates": "JUNIO 2022 - PRESENTE",
+      "languages": [
+        { "label": "PHP" },
+        { "label": "HTML" },
+        { "label": "CSS" },
+        { "label": "JavaScript" },
+        { "label": "MySQL" }
+      ]
+    }
+  ] 
+}

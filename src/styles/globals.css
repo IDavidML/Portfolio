@@ -1,0 +1,336 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth
+}
+
+:root {
+    --foreground-rgb: 0,0,0;
+    --background-start-rgb: 214,219,220;
+    --background-end-rgb: 255,255,255;
+    --secondary-glow: linear-gradient(to bottom right,rgba(120,192,224,0),rgba(68,157,209,0),rgba(25,43,194,.3));
+    --body-background: #f6f6f6;
+    --primary-glow: radial-gradient(rgba(120,192,224,.3),rgba(68,157,209,0));
+    --scrollbar-tumbl: #b3b3b369;
+    --gradient-title-custom: linear-gradient(#151414,#5e0c7300);
+    --shadow-cursor: 120,192,224,0.15
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-rgb:255,255,255;
+        --background-start-rgb: 0,0,0;
+        --background-end-rgb: 0,0,0;
+        --body-background: #040404;
+        --shadow-cursor: 120,192,224,0.058;
+        --gradient-title-custom: linear-gradient(#fff0e1,#5e0c7300);
+        color-scheme: dark
+    }
+}
+
+body {
+    color: rgb(var(--foreground-rgb));
+    background: rgb(var(--background-start-rgb));
+    font-family: var(--font-inter),ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+}
+
+.page-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 4rem 0
+}
+
+.page-center:before {
+    background: var(--secondary-glow);
+    border-radius: 50%;
+    width: 480px;
+    height: 360px;
+    margin-left: -400px;
+	z-index: -999;
+}
+
+.page-center:after,.page-center:before {
+    content: "";
+    left: 50%;
+    position: absolute;
+    filter: blur(45px);
+    transform: translateZ(0);
+	z-index: -999;
+}
+
+.page-center:after {
+    background: var(--primary-glow);
+    width: 240px;
+    height: 180px;
+	z-index: -999;
+}
+
+.shake-left-right:hover {
+    animation: shake-left-2 .8s linear both
+}
+
+.shake-left-right {
+    animation: shake-left-right .8s linear both;
+}
+
+@keyframes shake-left-right {
+    0%,to {
+        transform: rotate(0deg);
+        transform-origin: 50% 50%
+    }
+
+    10% {
+        transform: rotate(8deg)
+    }
+
+    20%,40%,60% {
+        transform: rotate(-10deg)
+    }
+
+    30%,50%,70% {
+        transform: rotate(10deg)
+    }
+
+    80% {
+        transform: rotate(-8deg)
+    }
+
+    90% {
+        transform: rotate(8deg)
+    }
+}
+
+@keyframes shake-left-2 {
+    0%,to {
+        transform: rotate(0deg);
+        transform-origin: 50% 50%
+    }
+
+    10% {
+        transform: rotate(8deg)
+    }
+
+    20%,40%,60% {
+        transform: rotate(-10deg)
+    }
+
+    30%,50%,70% {
+        transform: rotate(10deg)
+    }
+
+    80% {
+        transform: rotate(-8deg)
+    }
+
+    90% {
+        transform: rotate(8deg)
+    }
+}
+
+.text-gradient {
+    background-image: var(--gradient-title-custom);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative
+}
+
+.hover\:underline:hover {
+    text-decoration-line: underline
+}
+
+.group:hover .group-hover\:w-6 {
+    width: 1.5rem
+}
+
+.group:hover .group-hover\:bg-neutral-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(38 38 38/var(--tw-bg-opacity))
+}
+
+.group:hover .group-hover\:opacity-90 {
+    opacity: .9
+}
+
+.group:hover .group-hover\:sepia-0 {
+    --tw-sepia: sepia(0);
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
+
+@media (prefers-reduced-motion:reduce) {
+    .motion-reduce\:transition-none {
+        transition-property: none
+    }
+}
+
+@media (max-width: 900px) {
+    .max-\[900px\]\:opacity-0 {
+        opacity:0
+    }
+}
+
+@media (max-width: 1000px) {
+    .max-\[1000px\]\:col-span-2 {
+        grid-column:span 2/span 2
+    }
+
+    .max-\[1000px\]\:block {
+        display: block
+    }
+
+    .max-\[1000px\]\:hidden {
+        display: none
+    }
+
+    .max-\[1000px\]\:h-auto {
+        height: auto
+    }
+
+    .max-\[1000px\]\:px-2 {
+        padding-left: .5rem;
+        padding-right: .5rem
+    }
+
+    .max-\[1000px\]\:pt-0 {
+        padding-top: 0
+    }
+
+    .max-\[1000px\]\:pt-5 {
+        padding-top: 1.25rem
+    }
+}
+
+@media (max-width: 700px) {
+    .max-\[700px\]\:ml-0 {
+        margin-left:0
+    }
+
+    .max-\[700px\]\:mt-2 {
+        margin-top: .5rem
+    }
+
+    .max-\[700px\]\:mt-4 {
+        margin-top: 1rem
+    }
+
+    .max-\[700px\]\:hidden {
+        display: none
+    }
+
+    .max-\[700px\]\:w-full {
+        width: 100%
+    }
+
+    .max-\[700px\]\:flex-col {
+        flex-direction: column
+    }
+
+    .max-\[700px\]\:items-start {
+        align-items: flex-start
+    }
+
+    .max-\[700px\]\:px-2 {
+        padding-left: .5rem;
+        padding-right: .5rem
+    }
+
+    .max-\[700px\]\:text-7xl {
+        font-size: 4.5rem;
+        line-height: 1
+    }
+
+    .max-\[700px\]\:after\:hidden:after {
+        content: var(--tw-content);
+        display: none
+    }
+}
+
+@media (min-width: 640px) {
+    .sm\:col-span-2 {
+        grid-column:span 2/span 2
+    }
+
+    .sm\:col-span-6 {
+        grid-column: span 6/span 6
+    }
+
+    .sm\:grid-cols-8 {
+        grid-template-columns: repeat(8,minmax(0,1fr))
+    }
+
+    .sm\:gap-8 {
+        gap: 2rem
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:gap-4 {
+        gap:1rem
+    }
+}
+
+@media (min-width: 1000px) {
+    .min-\[1000px\]\:sticky {
+        position:sticky
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg\:block {
+        display:block
+    }
+
+    .lg\:hover\:\!opacity-100:hover {
+        opacity: 1!important
+    }
+
+    .group:hover .lg\:group-hover\:bg-neutral-300\/20 {
+        background-color: hsla(0,0%,83%,.2)
+    }
+
+    .group\/list:hover .lg\:group-hover\/list\:opacity-50 {
+        opacity: .5
+    }
+
+    .group:hover .lg\:group-hover\:shadow-\[inset_0_1px_0_0_rgba\(148\2c 163\2c 184\2c 0\.1\)\] {
+        --tw-shadow: inset 0 1px 0 0 rgba(148,163,184,.1);
+        --tw-shadow-colored: inset 0 1px 0 0 var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)
+    }
+
+    .group:hover .lg\:group-hover\:drop-shadow-lg {
+        --tw-drop-shadow: drop-shadow(0 10px 8px rgba(0,0,0,.04)) drop-shadow(0 4px 3px rgba(0,0,0,.1));
+        filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .group:hover .lg\:group-hover\:dark\:bg-neutral-800\/20 {
+            background-color:rgba(38,38,38,.2)
+        }
+    }
+}
+
+.\[\&\>a\]\:text-orange-800>a {
+    --tw-text-opacity: 1;
+    color: rgb(154 52 18/var(--tw-text-opacity))
+}
+
+.hover\:\[\&\>a\]\:text-cyan-700>a:hover {
+    --tw-text-opacity: 1;
+    color: rgb(14 116 144/var(--tw-text-opacity))
+}
+
+@media (prefers-color-scheme: dark) {
+    .dark\:\[\&\>a\]\:text-orange-50>a {
+        --tw-text-opacity:1;
+        color: rgb(255 247 237/var(--tw-text-opacity))
+    }
+
+    .dark\:hover\:\[\&\>a\]\:text-cyan-500>a:hover {
+        --tw-text-opacity: 1;
+        color: rgb(6 182 212/var(--tw-text-opacity))
+    }
+}
