@@ -11,7 +11,7 @@ function About() {
         </p>
         <ul className="flex flex-wrap gap-4" aria-label="Sobre mí">
           <a href="/CV_ES.pdf" target="_blank" className="flex items-center rounded-full bg-blue-100/10 hover:bg-blue-100/20 transition-colors pl-2 pr-4 py-2 text-md font-medium leading-5 dark:text-white text-black">
-            <Image alt="Currículum Vitae" className="fill-white ml-1 mr-2" src="/curriculum-vitae-svgrepo-com.svg" height={16} width={16}/>
+            <Image alt="Currículum Vitae" className="fill-white ml-1 mr-2" src="/icons/curriculum.svg" height={16} width={16}/>
             Currículum Vitae
           </a>
           <a href="https://github.com/DavidML16" target="_blank" className="flex items-center rounded-full bg-blue-100/10 hover:bg-blue-100/20 transition-colors pl-2 pr-4 py-2 text-md font-medium leading-5 dark:text-white text-black">
