@@ -135,7 +135,7 @@ function Contacto() {
               />
             {errors.email && (
               <span id="email-error" className="formValidationError">
-                {errors.email.message}
+                Se necesita un email válido. Ejemplo: nombre@dominio.com.
               </span>
             )}
           </div>
