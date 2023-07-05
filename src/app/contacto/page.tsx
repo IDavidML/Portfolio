@@ -85,8 +85,6 @@ function Contacto() {
               id="grid-first-name" 
               type="text" 
               placeholder="Jane"
-              aria-invalid={errors.name}
-              aria-describedby="name-error"
               autoComplete="name"
               {...register('name', { required: requiredFieldErrorMsg })}
               />
@@ -105,8 +103,6 @@ function Contacto() {
               id="grid-lastname" 
               type="text" 
               placeholder="Conor"
-              aria-invalid={errors.name}
-              aria-describedby="lastname-error"
               autoComplete="lastname"
               {...register('lastname', { required: requiredFieldErrorMsg })}
               />
@@ -127,8 +123,6 @@ function Contacto() {
               id="email" 
               type="email" 
               placeholder='ejemplo@gmail.com'
-              aria-invalid={errors.email}
-              aria-describedby="email-error"
               autoComplete="email"
               {...register('email', {
                 required: requiredFieldErrorMsg,
@@ -154,8 +148,6 @@ function Contacto() {
             <textarea 
               className="no-resize appearance-none block w-full transition-colors bg-white/20 text-white/80 border border-transparent rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white/30 h-48 resize-none" 
               id="message"
-              aria-invalid={errors.message}
-              aria-describedby="message-error"
               {...register('message', {
                 required: requiredFieldErrorMsg
               })}
