@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 function Welcome() {
   return (
-    <section className="h-screen relative flex items-center max-w-[1000px] mx-auto">
+    <section className="h-screen relative flex items-center max-w-[1100px] mx-auto">
       <div className="p-0 h-full text-center w-full page-center max-[700px]:after:hidden">
         <div className="flex items-center flex-col justify-center w-full gap-4">
           <div className="opacity-90 w-36 scale-150 h-36 mb-4">

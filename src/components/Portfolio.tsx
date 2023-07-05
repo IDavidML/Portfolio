@@ -12,7 +12,7 @@ function Portfolio() {
       <div className="h-full text-left max-w-full">
         <div className="grid grid-cols-2 gap-2 h-full w-full ">
           <Header/>
-          <div className="col-span-1 max-[1000px]:col-span-2 flex flex-col">
+          <div className="col-span-1 max-[1100px]:col-span-2 flex flex-col">
             <About/>
             <Experiences/>
             <Projects/>

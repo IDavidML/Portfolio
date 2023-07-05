@@ -2,14 +2,14 @@ import React from 'react'
 
 function Header() {
   return (
-    <header className="flex col-span-1 max-[1000px]:col-span-2 top-0 h-screen max-[1000px]:h-auto min-[1000px]:sticky  gap-3">
-      <div className="h-full py-24 px-14 max-[1000px]:px-2 flex-col  flex">
+    <header className="flex col-span-1 max-[1100px]:col-span-2 top-8 h-screen max-[1100px]:h-auto min-[1100px]:sticky gap-3">
+      <div className="h-full py-24 px-14 max-[1100px]:px-2 flex-col  flex">
         <div className="flex flex-col gap-3">
           <h1 className="font-bold text-[#1f1c19] dark:text-blue-400 relative item-s text-transparent text-6xl bg-clip-text inline-block text-gradient tracking-tighter">David Morales</h1>
           <h2 className="dark:text-blue-300 text-blue-400 item-s text-transparent bg-clip-text tracking-tighter text-gradient text-xl">Desarrollador Fullstack</h2>
           <p className="w-96 max-[700px]:w-full opacity-80 dark:text-blue-100 text-[#302e2a] item-s text-transparent text-gradient bg-clip-text leading-5">Construyo productos accesibles y experiencias digitales para la web y el móvil.</p>
         </div>
-        <nav className="my-10 max-[1000px]:hidden">
+        <nav className="my-10 max-[1100px]:hidden">
           <ul className="flex flex-col gap-1 text-base font-semibold">
             <li>
               <a href="#sobre-mi" className="dark:text-blue-100 text-neutral-600 hover:text-neutral-950 dark:hover:text-neutral-50 py-1 group transition-colors flex items-center max-w-min">

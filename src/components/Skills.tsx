@@ -16,7 +16,7 @@ function Skills() {
   }, [])
 
   return (
-    <section id="habilidades" className="py-24 max-[1000px]:pt-5">
+    <section id="habilidades" className="py-24 max-[1100px]:pt-5">
       <h3 className="text-2xl font-semibold tracking-tight mb-3 pb-4 dark:text-blue-400 text-black/80">Habilidades</h3>
       <div className="mx-auto">
         <div className="grid grid-cols-4  space-x-2 justify-center items-center">
