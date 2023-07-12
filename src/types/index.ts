@@ -18,6 +18,8 @@ export interface IProject {
   url: string,
   state: string,
   description: string,
+  longDescription: string[],
+  showPortfolio: boolean,
   languages: ILanguage[]
 }
 
@@ -25,4 +27,12 @@ export interface ISkill {
   id: string,
   label: string,
   icon: string
+}
+
+export interface IPost {
+  title: string
+  slug: string
+  date: string
+  description: string
+  body: string
 }

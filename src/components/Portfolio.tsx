@@ -17,7 +17,6 @@ function Portfolio() {
             <Experiences/>
             <Projects/>
             <Skills/>
-            <Footer/>
           </div>
         </div>
       </div>

@@ -6,6 +6,13 @@
       "url": "https://play.google.com/store/apps/details?id=com.github.davidml16.autobusesdelabahia",
       "status": "En producción",
       "description": "Aplicación Android para la consulta de información de los autobuses interurbanos de toda la comunidad autónoma, Andalucía. Líneas, Paradas, Horarios y Saldo de tarjeta del consorcio de transporte.",
+      "longDescription": [
+        "Aplicación creada para Android, en la cual podrás consultar con mayor facilidad las líneas interurbanas disponibles en tu provincia (Solo en la comunidad autónoma de Andalucía).",
+        "Dentro de cada línea, podrás consultar sus horarios de ida y vuelta. Con sus horas aproximadas de llegada a cada parada. Además con el mapa interactivo podrás ver la ruta que sigue esta línea.",
+        "Podrás ver en cada sección individual, las tarifas existentes, paradas y puestos de venta/recarga cercanos mediante el mapa interactivo",
+        "Por último, consulta el saldo de su tarjeta de transporte usando la tecnología NFC!"
+      ],
+      "showPortfolio": true,
       "languages": [
         { "label": "Java" },
         { "label": "REST API" }

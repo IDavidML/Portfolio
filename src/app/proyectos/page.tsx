@@ -1,8 +1,11 @@
+import ProjectsList from '@/components/ProjectsList'
 import React from 'react'
 
 function Page() {
   return (
-    <h1>En construcción</h1>
+    <>
+      <ProjectsList/>
+    </>
   )
 }
 
