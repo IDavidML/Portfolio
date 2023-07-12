@@ -1,6 +1,5 @@
 'use client'
 
-import getPosts from '@/lib/posts'
 import { IProject } from '@/types'
 import React, { useEffect, useState } from 'react'
 import Project from './UI/Project'
